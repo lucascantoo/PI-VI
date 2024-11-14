@@ -1,15 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Home.css'; // Certifique-se de que o CSS foi importado corretamente
 
 function Home() {
   return (
     <div className="home-container">
-      <h1>Bem-vindo ao Controle de Saúde</h1>
-      <p>Informações sobre saúde e bem-estar...</p>
-      <div className="buttons">
-        <button><Link to="/comida">Consumação de Comida</Link></button>
-        <button><Link to="/agua">Consumação de Água</Link></button>
-        <button><Link to="/logout">Logout</Link></button>
+      <h2>Bem-vindo ao Kcal-Culator!</h2>
+      <div className="information-box">
+        <h3>Dicas para um Estilo de Vida Saudável</h3>
+        <p>Mantenha uma alimentação balanceada e beba bastante água todos os dias!</p>
+      </div>
+      
+      <div className="buttons-container">
+        <button onClick={() => window.location.href = "/comida"}>Consumo de Comida</button>
+        <button onClick={() => window.location.href = "/agua"}>Consumo de Água</button>
+        <button className="logout" onClick={() => alert('Deslogado com sucesso!')}>Logout</button>
       </div>
     </div>
   );
