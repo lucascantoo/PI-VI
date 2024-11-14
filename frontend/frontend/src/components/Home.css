@@ -1,0 +1,80 @@
+/* Estilo para a página home */
+.home-container {
+    display: flex;
+    flex-direction: column;  /* Alinha os itens de forma vertical */
+    justify-content: center; /* Alinha os itens no centro verticalmente */
+    align-items: center;     /* Alinha os itens no centro horizontalmente */
+    height: 100vh;           /* Faz o contêiner ocupar toda a altura da tela */
+    background-color: #2f4f4f; /* Fundo verde escuro */
+    color: white;            /* Cor do texto */
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;     /* Espaçamento abaixo do título */
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 40px;     /* Espaçamento abaixo do parágrafo */
+    text-align: center;      /* Alinha o texto no centro */
+    max-width: 80%;          /* Limita a largura do texto */
+  }
+  
+  button {
+    width: 250px;            /* Largura fixa para os botões */
+    padding: 15px;
+    margin: 10px;
+    background-color: #FFA500; /* Cor laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;      /* Bordas arredondadas */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e68900; /* Cor mais escura quando o botão é hover */
+  }
+  
+  /* Estilo para o botão de logout na Home */
+button.logout {
+    background-color: #FF4500; /* Cor vermelha para o botão de logout */
+  }
+  
+  button.logout:hover {
+    background-color: #e03e00; /* Cor mais escura quando o botão de logout é hover */
+  }
+  
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centraliza os botões */
+    justify-content: center;
+  }
+  
+  .information-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 90%; /* Limita a largura da caixa */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo de forma vertical */
+    justify-content: center; /* Alinha o conteúdo ao centro verticalmente */
+    align-items: center; /* Garante que tudo dentro da caixa esteja centralizado */
+  }
+  
+  .information-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+  }
+  
+  .information-box p {
+    font-size: 1.1em;
+    margin-top: 0; /* Remove margem extra acima do parágrafo */
+  }
+  
